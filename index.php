@@ -14,7 +14,14 @@
  * mitmerealine
  * kommentaar
  */
-#VCS-->Commit
+//VCS-->Commit
+//stringide kasutamine
+print "See on tavaline tekst<br/>\n";
+//kõik käsud PHP-s lõpevad semikooloniga
+print 'Siin on veel üks tekst<br/>';
+//echo käsk
+echo "See on tekst kahekordsete jutumärkidega<br/>\n";
+echo 'See on teistsuguste jutumärkidega<br/>';
 ?>
 
 
