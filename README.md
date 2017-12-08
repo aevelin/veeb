@@ -1,2 +1,2 @@
 # veeb
-# programmeerimisvahendid
+# programmeerimisvahendite kasutamine
