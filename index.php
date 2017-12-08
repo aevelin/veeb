@@ -8,7 +8,7 @@
 
 #see on ka üherealine kommentaar
 
-//üherealine kommentaar
+// üherealine kommentaar
 
 /**
  * mitmerealine
