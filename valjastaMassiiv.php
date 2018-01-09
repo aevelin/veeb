@@ -23,5 +23,4 @@ function valjastaMassiiv($tabel){
     echo '</table>';
 }
 valjastaMassiiv($array);
-
 ?>
