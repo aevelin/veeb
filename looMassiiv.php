@@ -23,6 +23,4 @@ $elementideArv = 15;
 $arvudeMassiiv = looMassiiv($elementideArv);
 
 print_r($arvudeMassiiv);
-
-
 ?>
