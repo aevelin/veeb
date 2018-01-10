@@ -10,10 +10,6 @@
  * Tulemus väljastatakse antud funktsiooni abil kujul:
  * Tulemus: 1 * 6 * 5 = 30
 */
-/**
- * @param $massiivUus
- * @return int
- */
 
 function elementideKorrutis($array){
     $tulemus = 1;
