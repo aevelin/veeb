@@ -2,6 +2,8 @@
 
 /*Kodutöö esilagne lahendus*/
 
+echo '<b>Kodutöö esialgne lahendus:</b> <br /> <br />';
+
 function vorm(){
     echo '
  <form action="aeg.php" method="post">
@@ -73,6 +75,9 @@ vorm();
 echo '<hr>';
 
 /*Täiendused tunnis*/
+
+echo '<b>Täiendused tunnis:</b> <br /> <br />';
+
 
 function paev(){
     $valik = '<select name="paev">';
