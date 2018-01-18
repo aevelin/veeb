@@ -17,7 +17,7 @@ function vormid() {
 
 function vormideAndmed() {
     echo '<pre>';
-    print_r($_GET); /*jõuavad andmed, mis saadetud get-meetodiga*/
+    print_r($_GET); /*jõuavad andmed, mis saadetud post-meetodiga*/
     echo '<pre>';
 }
 vormid();
@@ -50,7 +50,7 @@ function vormiAndmed(){
     print_r($_POST);
     echo '</pre>';
     $korras = false;
-    if(empty($_POST)){ /*jõuavad andmed, mis saadetud post-meetodiga*/
+    if(empty($_POST)){ 
 //        echo 'Vorm ei saatnud andmed<br />';
     } else {
 //        echo 'Andmed on saadetud<br />';
