@@ -21,6 +21,7 @@ function yhendus() {
     }
 }
 
+/*Funktsioon päringu saatmiseks*/
 function saadaParing($yhendus, $sql) {
     $tulemus = mysqli_query($yhendus, $sql);
     if(!$tulemus) {
@@ -29,8 +30,25 @@ function saadaParing($yhendus, $sql) {
         echo mysqli_errno($yhendus).'<br />';
         return false;
     } else {
-        echo 'Päring läks läbi';
-        return true;
+        echo 'Päring läks läbi!';
+        return /*true*/ $tulemus;
+    }
+}
+
+/*Andmete saatmise funktsioon*/
+function annaAndmed($yhendus, $sql) {
+    $tulemus = saadaParing($yhendus, $sql);/*järjekord on oluline!*/
+    $andmed = array(); /*massiiv, kus päringu andmed*/
+    if($tulemus != false) {
+        while($rida = mysqli_fetch_assoc($tulemus)) {
+            $andmed[] = $rida;
+        }
+    }
+    if (count($andmed) == 0) {
+        return false;
+    } else {
+        /*tagastame andmetega täidetud masiiivi*/
+        return $andmed;
     }
 }
 ?>
