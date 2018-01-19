@@ -16,8 +16,21 @@ function yhendus() {
         echo 'mysqli_connect_errno().<br />'; /* arv, mis ütleb, mis veaga tegu*/
         return false;
     } else {
-        echo 'Ühendus andmebaasi serveriga on loodud<br />';
+        echo 'Ühendus andmebaasi serveriga on loodud!<br />';
         return $yhendus;
+    }
+}
+
+function saadaParing($yhendus, $sql) {
+    $tulemus = mysqli_query($yhendus, $sql);
+    if(!$tulemus) {
+        echo 'Päringuga on probleem!'.$sql.'<br />';
+        echo mysqli_error($yhendus).'<br />';
+        echo mysqli_errno($yhendus).'<br />';
+        return false;
+    } else {
+        echo 'Päring läks läbi';
+        return true;
     }
 }
 ?>
