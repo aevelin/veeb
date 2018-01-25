@@ -18,4 +18,10 @@ print_r($minuTekst);
 echo '<pre>';
 //prindime välja
 $minuTekst->prindiTekst();
+//loome veel ühe objekti ja määrame sisu
+$minuTekst = new tekst('Must tekst.');
+echo '<pre>';
+print_r($minuTekst);
+echo '<pre>';
+$minuTekst->prindiTekst();
 ?>
