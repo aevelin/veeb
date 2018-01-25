@@ -24,4 +24,13 @@ echo '<pre>';
 print_r($minuTekst);
 echo '<pre>';
 $minuTekst->prindiTekst();
+
+//punase teksti väljastamine
+//vaja kutsuda teine klass vtekst.php
+require_once 'vtekst.php';
+$punaneTekst = new vtekst('Punane tekst', '#F00');
+echo '<pre>';
+print_r($punaneTekst);
+echo '<pre>';
+$punaneTekst->prindiTekst();
 ?>
